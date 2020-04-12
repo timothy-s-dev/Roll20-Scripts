@@ -23,3 +23,11 @@ An updated/modified version of shdwjk's fantastic [Torch](https://gist.github.co
 > **remove-light** - Accepts no arguments, removes all lights for selected tokens.
 
 I have not yet had a chance to implement the flickering lights from shdwjk's Torch script, but may try to do so in the future.
+
+## Roll Initiative
+
+A fairly straightforward script that performs d20 initiative rolls for either all valid tokens on the current page, or all valid selected tokens.  Tokens are considered "valid" for turn order if they represent a character sheet that has an initiative bonus.  The script supports optionally grouping all tokens that represent the same character sheet under a single roll.
+
+> **roll-initiative [group?]** - Accepts one argument, the word group; if present it groups tokens that represent the same character sheet, if the argument is left off it does not.  Automatically rolls initiative for all selected tokens.  If no tokens are selected it instead rolls initiative for all tokens on the current page.
+
+> **roll-initiative-all [group?]** - Uses the same argument logic as the `roll-initiative` command, but always rolls for all tokens on the current page, even if some are selected.
