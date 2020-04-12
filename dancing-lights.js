@@ -1,3 +1,7 @@
+// DancingLights v0.1
+// Licensed under GNU General Public License v3.0
+// Available on GitHub: https://github.com/timothy-s-dev/Roll20-Scripts
+
 var DancingLights = DancingLights || (function () {
   'use strict';
 
